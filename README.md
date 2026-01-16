@@ -34,29 +34,21 @@ git clone https://github.com/your-username/Employee-Management-System.git
 # Create Databse
 ```sql
 -- Create Database
-CREATE DATABASE Employee;
-USE Employee;
+create database ems;
 
--- Table for User Login & Registration
-CREATE TABLE information (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    password VARCHAR(100) NOT NULL,
-    city VARCHAR(50)
+use ems;
+
+-- Create table admin
+create table admin_details(name varchar(100)
+,email varchar(100),
+password varchar(100));
+
+-- create employee
+create table employee(
+id int ,
+name varchar(100),
+email varchar(100),
+salary double,
+department varchar(50)
 );
-
--- Table for Employee Data
-CREATE TABLE empdata (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    dept VARCHAR(100) NOT NULL
-);
-
--- View tables
-SHOW TABLES;
-
--- Sample select queries
-SELECT * FROM information;
-SELECT * FROM empdata;
 ```
