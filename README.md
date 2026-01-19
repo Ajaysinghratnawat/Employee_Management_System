@@ -7,7 +7,7 @@ A Java-based web application for managing employee records using **Servlets, JSP
 ## 🚀 Features
 - Add, View, Update, Delete Employees (CRUD)
 - User Authentication (Login & Registration)
-- Layered Architecture (Controller, DAO, Model, Util, View)
+- Layered Architecture (Controller, DAO, dto, Util)
 - JDBC-based database connectivity
 - Simple UI using HTML & CSS
 
